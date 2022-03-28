@@ -1,0 +1,781 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".BudgetPlace1">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FFFFFF">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:layout_gravity="center">
+
+        <TextView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:text="1"
+            android:gravity="center"
+            android:textColor="#FFFFFF"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            android:background="@drawable/greencircle" />
+
+
+
+        <View
+            android:layout_width="40dp"
+            android:layout_height="8dp"
+            android:background="#BDBDBD"
+            android:layout_marginTop="21dp" />
+
+        <TextView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:text="2"
+            android:gravity="center"
+            android:textColor="#8BC34A"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            android:background="@drawable/emptygreencircle" />
+
+
+
+
+        <View
+            android:layout_width="40dp"
+            android:layout_height="8dp"
+            android:background="#BDBDBD"
+            android:layout_marginTop="21dp" />
+
+        <TextView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:text="3"
+            android:gravity="center"
+            android:textColor="#8BC34A"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            android:background="@drawable/emptygreencircle" />
+
+
+
+        <View
+            android:layout_width="40dp"
+            android:layout_height="8dp"
+            android:background="#BDBDBD"
+            android:layout_marginTop="21dp" />
+
+        <TextView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:text="4"
+            android:gravity="center"
+            android:textColor="#8BC34A"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            android:background="@drawable/emptygreencircle" />
+
+
+
+
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="#8BC34A"
+        android:elevation="5dp"
+        android:fadingEdgeLength="3dp"
+        android:padding="3dp"
+        android:clipToPadding="false">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Where do you want to start your journey?"
+            android:textSize="17dp"
+            android:textColor="#FFFFFF"
+            android:layout_margin="20dp"/>
+
+        <EditText
+            android:id="@+id/source"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFF"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:padding="3dp"
+            android:textSize="17dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="When do you want to start your journey?"
+            android:textSize="17dp"
+            android:textColor="#FFFFFF"
+            android:layout_margin="20dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginBottom="30dp">
+            <EditText
+                android:id="@+id/date"
+                android:padding="3dp"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:background="#FFFFFF"/>
+            <EditText
+                android:id="@+id/month"
+                android:padding="3dp"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:background="#FFFFFF"/>
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:orientation="horizontal"
+            android:background="#8BC34A"
+            android:layout_marginTop="16dp"
+            android:elevation="5dp"
+            android:fadingEdgeLength="3dp"
+            android:padding="3dp"
+            android:clipToPadding="false">
+            <ImageView
+                android:id="@+id/plane"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:src="@drawable/plane"
+                android:layout_weight="1"
+                android:layout_gravity="center_vertical"/>
+
+            <View
+                android:layout_width="3dp"
+                android:layout_height="match_parent"
+                android:background="#FFFFFF"/>
+
+            <ImageView
+                android:id="@+id/train"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:src="@drawable/train"
+                android:layout_weight="1"
+                android:layout_gravity="center_vertical"/>
+        </LinearLayout>
+
+
+    <TableLayout
+        android:id="@+id/three"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_gravity="center_horizontal"
+        android:visibility="gone">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:padding="4dp"
+                android:text="Train Name"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                android:layout_margin="1dp"
+                android:gravity="center"
+                android:background="#039BE5"
+                android:textColor="#FFFFFF"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:padding="4dp"
+                android:text="Off Day"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:layout_margin="1dp"
+                android:background="#039BE5"
+                android:textColor="#FFFFFF"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:padding="4dp"
+                android:text="Depart"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:layout_margin="1dp"
+                android:background="#039BE5"
+                android:textColor="#FFFFFF"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:padding="4dp"
+                android:text="Arrival"
+                android:gravity="center"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                android:layout_margin="1dp"
+                android:background="#039BE5"
+                android:textColor="#FFFFFF"/>
+
+
+
+        </TableRow>
+    </TableLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/planeList"
+        android:orientation="vertical"
+        android:background="#8BC34A"
+        android:layout_marginLeft="23dp"
+        android:layout_marginRight="23dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginBottom="32dp"
+        android:visibility="gone">
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/trainList"
+        android:orientation="vertical"
+        android:background="#8BC34A"
+        android:layout_marginLeft="23dp"
+        android:layout_marginRight="23dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginBottom="32dp"
+        android:visibility="gone">
+
+
+    </LinearLayout>
+
+
+    <TableLayout
+        android:id="@+id/planePrice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:background="#8BC34A"
+        android:layout_marginLeft="23dp"
+        android:layout_marginRight="23dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginBottom="32dp"
+        android:visibility="gone">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:padding="4dp"
+                android:text="Seat Type"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                android:layout_margin="1dp"
+                android:gravity="center"
+                android:background="#8BC34A"
+                android:textColor="#FFFFFF"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:paddingLeft="4dp"
+                android:paddingRight="4dp"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"
+                android:text="Price Per Seat"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:layout_margin="1dp"
+                android:background="#8BC34A"
+                android:textColor="#FFFFFF"/>
+
+
+
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/first">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:padding="4dp"
+                android:text="AC Class Berth"
+                android:textSize="14dp"
+                android:layout_margin="3dp"
+                android:gravity="center"
+                android:background="#FFFFFF"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:paddingLeft="4dp"
+                android:paddingRight="4dp"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"
+                android:text="1093 BDT"
+                android:textSize="14dp"
+                android:gravity="center"
+                android:layout_margin="3dp"
+                android:background="#FFFFFF"/>
+
+
+
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/sec">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:paddingLeft="4dp"
+                android:paddingRight="4dp"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"
+                android:text="AC Class Seat"
+                android:textSize="14dp"
+                android:gravity="center"
+                android:layout_margin="3dp"
+                android:background="#FFFFFF"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:paddingLeft="4dp"
+                android:paddingRight="4dp"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"
+                android:text="731 BDT"
+                android:textSize="14dp"
+                android:gravity="center"
+                android:layout_margin="3dp"
+                android:background="#FFFFFF"/>
+
+
+
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/third">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:paddingLeft="4dp"
+                android:paddingRight="4dp"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"
+                android:text="Snigdha"
+                android:textSize="14dp"
+                android:gravity="center"
+                android:layout_margin="3dp"
+                android:background="#FFFFFF"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:paddingLeft="4dp"
+                android:paddingRight="4dp"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"
+                android:text="610 BDT"
+                android:textSize="14dp"
+                android:gravity="center"
+                android:layout_margin="3dp"
+                android:background="#FFFFFF"/>
+
+
+
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/fourth">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:paddingLeft="4dp"
+                android:paddingRight="4dp"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"
+                android:text="First Class Berth"
+                android:textSize="14dp"
+                android:gravity="center"
+                android:layout_margin="3dp"
+                android:background="#FFFFFF"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:paddingLeft="4dp"
+                android:paddingRight="4dp"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"
+                android:text="635 BDT"
+                android:textSize="14dp"
+                android:gravity="center"
+                android:layout_margin="3dp"
+                android:background="#FFFFFF"/>
+
+
+
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/fifth">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:paddingLeft="4dp"
+                android:paddingRight="4dp"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"
+                android:text="First Class"
+                android:textSize="14dp"
+                android:gravity="center"
+                android:layout_margin="3dp"
+                android:background="#FFFFFF"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:paddingLeft="4dp"
+                android:paddingRight="4dp"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"
+                android:text="425 BDT"
+                android:textSize="14dp"
+                android:gravity="center"
+                android:layout_margin="3dp"
+                android:background="#FFFFFF"/>
+
+
+
+
+        </TableRow>
+
+    </TableLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/planeFare"
+        android:orientation="vertical"
+        android:layout_marginLeft="23dp"
+        android:layout_marginRight="23dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginBottom="32dp">
+
+
+        <RelativeLayout
+            android:id="@+id/PromoLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#8BC34A"
+            android:layout_marginBottom="16dp"
+            android:elevation="5dp"
+            android:fadingEdgeLength="3dp"
+            android:clipToPadding="false"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Promo"
+                android:textSize="20dp"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold"
+                android:id="@+id/one"
+                android:paddingLeft="16dp"
+                android:paddingBottom="8dp"
+                android:paddingTop="8dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/one"
+                android:text="BDT"
+                android:textColor="#FFFFFF"
+                android:textSize="15dp"
+                android:paddingLeft="16dp"
+                android:paddingBottom="8dp"
+                android:id="@+id/bdt1"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/one"
+                android:layout_toRightOf="@id/bdt1"
+                android:text="BDT"
+                android:textColor="#FFFFFF"
+                android:textSize="15dp"
+                android:paddingLeft="8dp"
+                android:paddingBottom="8dp"
+                android:id="@+id/promo"/>
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/ExcursionLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#8BC34A"
+            android:layout_marginBottom="16dp"
+            android:elevation="5dp"
+            android:fadingEdgeLength="3dp"
+            android:clipToPadding="false">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Excursion"
+                android:textSize="20dp"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold"
+                android:id="@+id/two"
+                android:paddingLeft="16dp"
+                android:paddingBottom="8dp"
+                android:paddingTop="8dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/two"
+                android:text="BDT"
+                android:textColor="#FFFFFF"
+                android:textSize="15dp"
+                android:paddingLeft="16dp"
+                android:paddingBottom="8dp"
+                android:id="@+id/bdt2"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/two"
+                android:layout_toRightOf="@id/bdt2"
+                android:text="BDT"
+                android:textColor="#FFFFFF"
+                android:textSize="15dp"
+                android:paddingLeft="8dp"
+                android:paddingBottom="8dp"
+                android:id="@+id/excursion"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/SaverLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#8BC34A"
+            android:layout_marginBottom="16dp"
+            android:elevation="5dp"
+            android:fadingEdgeLength="3dp"
+            android:clipToPadding="false">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Saver"
+                android:textSize="20dp"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold"
+                android:id="@+id/three1"
+                android:paddingLeft="16dp"
+                android:paddingBottom="8dp"
+                android:paddingTop="8dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/three1"
+                android:text="BDT"
+                android:textColor="#FFFFFF"
+                android:textSize="15dp"
+                android:paddingLeft="8dp"
+                android:paddingBottom="8dp"
+                android:id="@+id/bdt3"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/three1"
+                android:layout_toRightOf="@id/bdt3"
+                android:text="BDT"
+                android:textColor="#FFFFFF"
+                android:textSize="15dp"
+                android:paddingLeft="16dp"
+                android:paddingBottom="8dp"
+                android:id="@+id/saver"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/DiscountedLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#8BC34A"
+            android:layout_marginBottom="16dp"
+            android:elevation="5dp"
+            android:fadingEdgeLength="3dp"
+            android:clipToPadding="false">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Discounted"
+                android:textSize="20dp"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold"
+                android:id="@+id/five"
+                android:paddingLeft="16dp"
+                android:paddingBottom="8dp"
+
+                android:paddingTop="8dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/five"
+                android:text="BDT"
+                android:textColor="#FFFFFF"
+                android:textSize="15dp"
+                android:paddingLeft="8dp"
+                android:paddingBottom="8dp"
+                android:id="@+id/bdt5"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/five"
+                android:layout_toRightOf="@id/bdt5"
+                android:text="BDT"
+                android:textColor="#FFFFFF"
+                android:textSize="15dp"
+                android:paddingLeft="16dp"
+                android:paddingBottom="8dp"
+                android:id="@+id/discounted"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/FlexibleLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#8BC34A"
+            android:layout_marginBottom="16dp"
+            android:elevation="5dp"
+            android:fadingEdgeLength="3dp"
+            android:clipToPadding="false">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Flexible"
+                android:textSize="20dp"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold"
+                android:id="@+id/four"
+                android:paddingLeft="16dp"
+                android:paddingBottom="8dp"
+                android:paddingTop="8dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/four"
+                android:text="BDT"
+                android:textColor="#FFFFFF"
+                android:textSize="15dp"
+                android:paddingLeft="8dp"
+                android:paddingBottom="8dp"
+                android:id="@+id/bdt4"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/four"
+                android:layout_toRightOf="@id/bdt4"
+                android:text="BDT"
+                android:textColor="#FFFFFF"
+                android:textSize="15dp"
+                android:paddingLeft="16dp"
+                android:paddingBottom="8dp"
+                android:id="@+id/flexible"/>
+        </RelativeLayout>
+
+
+
+    </LinearLayout>
+
+
+
+
+    <TextView
+        android:id="@+id/voot2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/voot" />
+
+</LinearLayout>
+
+</ScrollView>

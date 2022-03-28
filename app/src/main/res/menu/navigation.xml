@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_transport"
+        android:icon="@drawable/ic_home_black_24dp"
+        android:title="Transport" />
+
+    <item
+        android:id="@+id/navigation_Hotels"
+        android:icon="@drawable/ic_dashboard_black_24dp"
+        android:title="Hotels" />
+
+    <item
+        android:id="@+id/navigation_spots"
+        android:icon="@drawable/ic_notifications_black_24dp"
+        android:title="Sites" />
+
+
+
+</menu>

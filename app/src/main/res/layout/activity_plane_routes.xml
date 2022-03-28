@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PlaneRoutes"
+    android:background="#EEEEEE">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="320dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginLeft="16dp"
+        android:background="#29B6F6"
+        android:elevation="5dp"
+        android:fadingEdgeLength="3dp"
+        android:padding="3dp"
+        android:clipToPadding="false"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Departure Place"
+            android:textColor="#FFFFFF"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginBottom="8dp"/>
+
+        <EditText
+            android:id="@+id/departPlace"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#EEEEEE"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Arrival Place"
+            android:textColor="#FFFFFF"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginBottom="8dp"/>
+
+        <EditText
+            android:id="@+id/arrivalPlace"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#EEEEEE"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Departure Date"
+                android:textColor="#FFFFFF"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Return Date"
+                android:textColor="#FFFFFF"
+                android:layout_marginLeft="100dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="8dp">
+            <EditText
+                android:id="@+id/departDate"
+                android:layout_width="30dp"
+                android:layout_height="20dp"
+                android:background="#FFFFFF"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="8dp"/>
+
+
+
+            <EditText
+                android:id="@+id/depattMonth"
+                android:layout_width="50dp"
+                android:layout_height="20dp"
+                android:background="#FFFFFF"
+                android:layout_marginRight="8dp"/>
+
+
+
+            <EditText
+                android:id="@+id/returnDate"
+                android:layout_width="30dp"
+                android:layout_height="20dp"
+                android:background="#FFFFFF"
+                android:layout_marginLeft="99dp"
+                android:layout_marginRight="8dp"/>
+
+            <EditText
+                android:id="@+id/returnMonth"
+                android:layout_width="50dp"
+                android:layout_height="20dp"
+                android:background="#FFFFFF"
+                android:layout_marginRight="8dp"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="16dp">
+
+            <RadioButton
+                android:id="@+id/roundTrip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:buttonTint="#FFFFFF"
+                android:checked="false"
+                android:text="Round Trip"
+                android:textColor="#FFFFFF" />
+
+            <RadioButton
+                android:id="@+id/oneWay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="100dp"
+                android:buttonTint="#FFFFFF"
+                android:text="One Way"
+                android:textColor="#FFFFFF" />
+
+        </LinearLayout>
+
+        <Button
+            android:id = "@+id/go"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="16dp"
+            android:text="Go"
+            android:background="@color/colorAccent"
+            android:textColor="#FFFFFF"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/rec"/>
+
+
+
+</RelativeLayout>

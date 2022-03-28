@@ -1,0 +1,468 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".TransportChoose"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="185dp"
+        android:layout_marginBottom="8dp"
+        android:background="#29B6F6"
+        android:clipToPadding="false"
+        android:elevation="5dp"
+        android:fadingEdgeLength="3dp"
+        android:orientation="vertical"
+        android:padding="3dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_weight="1"
+                android:text="Departure Place"
+                android:textColor="#FFFFFF" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_weight="1"
+                android:text="Arrival Place"
+                android:textColor="#FFFFFF" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/departPlace"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="3dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_weight="1"
+                android:background="#FFFFFF" />
+
+
+            <EditText
+                android:id="@+id/arrivalPlace"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="3dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_weight="1"
+                android:background="#FFFFFF" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="16dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Departure Date"
+                android:textColor="#FFFFFF" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="94dp"
+                android:text="Return Date"
+                android:textColor="#FFFFFF" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/departDate"
+                android:layout_width="30dp"
+                android:layout_height="20dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="8dp"
+                android:background="#FFFFFF" />
+
+
+            <EditText
+                android:id="@+id/depattMonth"
+                android:layout_width="50dp"
+                android:layout_height="20dp"
+                android:layout_marginRight="8dp"
+                android:background="#FFFFFF" />
+
+
+            <EditText
+                android:id="@+id/returnDate"
+                android:layout_width="30dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="92dp"
+                android:layout_marginRight="8dp"
+                android:background="#FFFFFF" />
+
+            <EditText
+                android:id="@+id/returnMonth"
+                android:layout_width="50dp"
+                android:layout_height="20dp"
+                android:layout_marginRight="8dp"
+                android:background="#FFFFFF" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/roundTrip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:buttonTint="#FFFFFF"
+                android:checked="false"
+                android:text="Round Trip"
+                android:textColor="#FFFFFF" />
+
+            <RadioButton
+                android:id="@+id/oneWay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="92dp"
+                android:buttonTint="#FFFFFF"
+                android:text="One Way"
+                android:textColor="#FFFFFF" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:background="#29B6F6"
+        android:elevation="5dp"
+        android:fadingEdgeLength="3dp"
+        android:padding="3dp"
+        android:clipToPadding="false">
+        <ImageView
+            android:id="@+id/plane"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:src="@drawable/plane"
+            android:layout_weight="1"
+            android:layout_gravity="center_vertical"/>
+
+        <View
+            android:layout_width="3dp"
+            android:layout_height="match_parent"
+            android:background="#FFFFFF"/>
+
+        <ImageView
+            android:id="@+id/train"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:src="@drawable/train"
+            android:layout_weight="1"
+            android:layout_gravity="center_vertical"/>
+    </LinearLayout>
+
+    <TableLayout
+        android:id="@+id/one"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_gravity="center_horizontal"
+        android:visibility="gone">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:padding="4dp"
+                android:text="Flight No"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                android:layout_margin="1dp"
+                android:gravity="center"
+                android:background="#039BE5"
+                android:textColor="#FFFFFF"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:padding="4dp"
+                android:text="Departure"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:layout_margin="1dp"
+                android:background="#039BE5"
+                android:textColor="#FFFFFF"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:padding="4dp"
+                android:text="Arrival"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:layout_margin="1dp"
+                android:background="#039BE5"
+                android:textColor="#FFFFFF"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:padding="4dp"
+                android:text="Day"
+                android:gravity="center"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                android:layout_margin="1dp"
+                android:background="#039BE5"
+                android:textColor="#FFFFFF"/>
+
+
+
+        </TableRow>
+
+    </TableLayout>
+
+    <TableLayout
+        android:id="@+id/two"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_gravity="center_horizontal"
+        android:visibility="gone">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:padding="4dp"
+                android:text="Flight No"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                android:layout_margin="1dp"
+                android:gravity="center"
+                android:background="#039BE5"
+                android:textColor="#FFFFFF"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:padding="4dp"
+                android:text="Departure"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:layout_margin="1dp"
+                android:background="#039BE5"
+                android:textColor="#FFFFFF"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:padding="4dp"
+                android:text="Arrival"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:layout_margin="1dp"
+                android:background="#039BE5"
+                android:textColor="#FFFFFF"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:padding="4dp"
+                android:text="Day"
+                android:gravity="center"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                android:layout_margin="1dp"
+                android:background="#039BE5"
+                android:textColor="#FFFFFF"/>
+
+
+
+        </TableRow>
+
+
+    </TableLayout>
+
+    <TableLayout
+        android:id="@+id/three"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_gravity="center_horizontal"
+        android:visibility="gone">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:padding="4dp"
+                android:text="Train Name"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                android:layout_margin="1dp"
+                android:gravity="center"
+                android:background="#039BE5"
+                android:textColor="#FFFFFF"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:padding="4dp"
+                android:text="Off Day"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:layout_margin="1dp"
+                android:background="#039BE5"
+                android:textColor="#FFFFFF"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:padding="4dp"
+                android:text="Depart"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:layout_margin="1dp"
+                android:background="#039BE5"
+                android:textColor="#FFFFFF"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:padding="4dp"
+                android:text="Arrival"
+                android:gravity="center"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                android:layout_margin="1dp"
+                android:background="#039BE5"
+                android:textColor="#FFFFFF"/>
+
+
+
+        </TableRow>
+    </TableLayout>
+
+    <TableLayout
+        android:id="@+id/four"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_gravity="center_horizontal"
+        android:visibility="gone">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:padding="4dp"
+                android:text="Train Name"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                android:layout_margin="1dp"
+                android:gravity="center"
+                android:background="#039BE5"
+                android:textColor="#FFFFFF"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:padding="4dp"
+                android:text="Off Day"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:layout_margin="1dp"
+                android:background="#039BE5"
+                android:textColor="#FFFFFF"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:padding="4dp"
+                android:text="Depart"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:layout_margin="1dp"
+                android:background="#039BE5"
+                android:textColor="#FFFFFF"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:padding="4dp"
+                android:text="Arrival"
+                android:gravity="center"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                android:layout_margin="1dp"
+                android:background="#039BE5"
+                android:textColor="#FFFFFF"/>
+
+
+
+        </TableRow>
+    </TableLayout>
+
+    <TextView
+        android:id="@+id/voot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/voot" />
+
+
+
+</LinearLayout>
+</ScrollView>

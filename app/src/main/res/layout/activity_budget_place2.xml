@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BudgetPlace2"
+    android:background="#FFFFFF"
+    android:orientation="vertical"
+  >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="15dp"
+        >
+
+        <TextView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:text="1"
+            android:gravity="center"
+            android:textColor="#FFFFFF"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            android:background="@drawable/greencircle" />
+
+
+
+        <View
+            android:layout_width="40dp"
+            android:layout_height="8dp"
+            android:background="#8BC34A"
+            android:layout_marginTop="21dp" />
+
+        <TextView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:text="2"
+            android:gravity="center"
+            android:textColor="#FFFFFF"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            android:background="@drawable/greencircle" />
+
+
+
+
+        <View
+            android:layout_width="40dp"
+            android:layout_height="8dp"
+            android:background="#BDBDBD"
+            android:layout_marginTop="21dp" />
+
+        <TextView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:text="3"
+            android:gravity="center"
+            android:textColor="#8BC34A"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            android:background="@drawable/emptygreencircle" />
+
+
+
+        <View
+            android:layout_width="40dp"
+            android:layout_height="8dp"
+            android:background="#BDBDBD"
+            android:layout_marginTop="21dp" />
+
+        <TextView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:text="4"
+            android:gravity="center"
+            android:textColor="#8BC34A"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            android:background="@drawable/emptygreencircle" />
+
+
+
+
+
+
+
+    </LinearLayout>
+
+    <ListView
+         android:layout_marginTop="10dp"
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@color/colorPrimaryDark"
+        android:layout_marginLeft="32dp"
+        android:layout_marginRight="32dp"
+        android:dividerHeight="8dp"
+        android:listSelector="@color/colorAccent"></ListView>
+
+    <Button
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/twobtn"
+        android:text="goToThree"
+        android:layout_marginTop="5dp"/>
+
+</LinearLayout>
